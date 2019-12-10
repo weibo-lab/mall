@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weibo.project.hmhw.mapper.ModelBaseMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.weibo.project.hmhw.model.ModelBase">
+        <id column="ID" property="id" />
+        <result column="MODEL_NAME" property="modelName" />
+        <result column="MODEL_LEVEL" property="modelLevel" />
+        <result column="MODEL_TOTAL" property="modelTotal" />
+        <result column="SCAN_TOTAL" property="scanTotal" />
+        <result column="INTELLECT" property="intellect" />
+        <result column="TYPE_F" property="typeF" />
+        <result column="TYPE_S" property="typeS" />
+        <result column="DIGITAL_ID" property="digitalId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        MODEL_NAME AS modelName, MODEL_LEVEL AS modelLevel, MODEL_TOTAL AS modelTotal, SCAN_TOTAL AS scanTotal, INTELLECT AS intellect, TYPE_F AS typeF, TYPE_S AS typeS, ID AS id, DIGITAL_ID AS digitalId
+    </sql>
+
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weibo.project.hmhw.mapper.ModelDigitalMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.weibo.project.hmhw.model.ModelDigital">
+        <id column="DIGITAL_ID" property="digitalId" />
+        <result column="picture1" property="picture1" />
+        <result column="picture2" property="picture2" />
+        <result column="picture3" property="picture3" />
+        <result column="video1" property="video1" />
+        <result column="video2" property="video2" />
+        <result column="video3" property="video3" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        picture1, picture2, picture3, video1, video2, video3, DIGITAL_ID AS digitalId
+    </sql>
+
+</mapper>
